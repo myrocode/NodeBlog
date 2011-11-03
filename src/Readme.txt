@@ -1,4 +1,4 @@
-[scope]
+#scope
 NodeBlog.js by Miro Radenovic
 This is just my first experience with node.js.
 The goal of this project is to learn:
@@ -8,9 +8,11 @@ The goal of this project is to learn:
 4)coffescript -> still thinking about that
 5)ejs -> https://github.com/visionmedia/ejs
 
-[installation]
-1) npm install ejs
-2)npm install router
+# installation
+## git clone git://github.com/myrocode/NodeBlog.git
+## npm install ejs
+## npm install router
+## node start.js
 
 
 
