@@ -9,10 +9,10 @@ The goal of this project is to learn:
 5)ejs -> https://github.com/visionmedia/ejs
 
 # installation
-## git clone git://github.com/myrocode/NodeBlog.git
-## npm install ejs
-## npm install router
-## node start.js
+1. git clone git://github.com/myrocode/NodeBlog.git
+2. npm install ejs
+3. npm install router
+4. node start.js
 
 
 
