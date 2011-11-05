@@ -9,7 +9,7 @@ PostController.process = function(request, response) {
     console.log("dirname" + __dirname);
     // why cant use this.loadViewContent ??????
     var view = PostController.loadViewContent(action);
-    var model = PostController.loadModel(id)
+    var model = PostController.loadModel(id);
     var result = PostController.render(view,model);
     
     response.setHeader("Content-Type", "text/html");

@@ -1,8 +1,2 @@
-<h3>MVC controller</h3>
-<% if (names.length) { %>
-  <ul>
-    <% names.forEach(function(name){ %>
-      <li><%= name %></li>
-    <% }) %>
-  </ul>
-<% } %>
+<h3><%= title %></h3>
+<%= content %>

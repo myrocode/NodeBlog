@@ -11,9 +11,10 @@ var Controller = {
     loadModel : function(model){
         var result =  {
             locals: {
-                names: ['foo', 'bar', 'baz'],
+                title: 'blog title',
+                content: 'blog content'
             }
-        }
+        };
         return result;
     },
     render : function(viewContent, model){
@@ -24,7 +25,5 @@ var Controller = {
         response.writeHead(200);
         response.end('welcome');
     }
-}
-
-    
+};  
 exports.Controller = Controller;
