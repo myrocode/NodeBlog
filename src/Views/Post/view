@@ -1,7 +1,4 @@
 <h3>MVC controller</h3>
-<b>selected action: <%= action %> on id:<%= id %> </b>
-
-
 <% if (names.length) { %>
   <ul>
     <% names.forEach(function(name){ %>

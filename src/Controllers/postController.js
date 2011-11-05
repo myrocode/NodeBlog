@@ -1,21 +1,35 @@
 var ejs = require('ejs');
-var fs = require('fs');
+var basecontroller = require('./baseController');
 
-function process(request, response) {
+var PostController = Object.create(basecontroller.Controller); 
+PostController.name = 'Post';
+PostController.process = function(request, response) {
     var action = request.params.action;
     var id = request.params.id;
     console.log("dirname" + __dirname);
-    var str = fs.readFileSync(__dirname + '/../Views/Post/view', 'utf8');
-    var ret = ejs.render(str, {
-      locals: {
-        names: ['foo', 'bar', 'baz'],
-        id: id,
-        action: action
-      }
-    });
+    // why cant use this.loadViewContent ??????
+    var view = PostController.loadViewContent(action);
+    var model = PostController.loadModel(id)
+    var result = PostController.render(view,model);
+    
     response.setHeader("Content-Type", "text/html");
     response.statusCode = 200;
-    response.end(ret);
-}
+    response.end(result);
+    };
 
-exports.process = process;
+
+
+
+/*PostController.process = function(request, response) {
+    response.setHeader("Content-Type", "text/html");
+    response.statusCode = 200;
+//    response.end(this.loadViewContent('view'));
+    var strToRender = "";
+    for(var prop in PostController)
+    {
+        strToRender += prop + '<br />' ;
+        }
+    response.end(strToRender);
+};*/
+    
+exports.process = PostController.process;

@@ -1,4 +1,4 @@
-#scope
+# scope
 NodeBlog.js by Miro Radenovic
 This is just my first experience with node.js.
 The goal of this project is to learn:
