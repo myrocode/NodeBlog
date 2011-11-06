@@ -1,15 +1,13 @@
 # scope
-NodeBlog.js by Miro Radenovic
+NodeBlog.js is a simple Blog engine written in Node.js using the MVC pattern.
+My personal goal for this project is to learn:
 
-This is just my first experience with node.js.
-
-The goal of this project is to learn:
-0. Get more confident with Javascript syntax
-1. Node.js -> by building a simple blog engine and eventually move my blog (http://www.myrocode.com) on it.
-2. Git -> get confident with git instead of SVN
-3. mongodb -> an eventually mongose ORM
-4. coffescript -> still thinking about that
-5.ejs -> https://github.com/visionmedia/ejs
+1. Get more confident with Javascript syntax
+2. Node.js -> by building a simple blog engine and eventually move my blog (http://www.myrocode.com) on it.
+3. Git -> get confident with git instead of SVN
+4. mongodb -> an eventually mongose ORM
+5. coffescript -> still thinking about that
+6. ejs -> https://github.com/visionmedia/ejs
 
 # installation
 1. git clone git://github.com/myrocode/NodeBlog.git
