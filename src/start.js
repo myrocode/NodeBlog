@@ -1,5 +1,4 @@
 var server = require("./mvcServer");
-var requestHandlers = require("./requestHandlers");
 var postController = require("./Controllers/postController");
 var homeController = require("./Controllers/homeController");
 
