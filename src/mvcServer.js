@@ -1,6 +1,6 @@
-var port;
+var port = 8080;
 var listenOn = '0.0.0.0';
-port = process.env.PORT;
+//port = process.env.PORT;
 
 function start(routes) {
     //register the controller
